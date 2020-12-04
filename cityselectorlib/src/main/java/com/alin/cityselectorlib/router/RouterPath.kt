@@ -13,5 +13,7 @@ package com.alin.cityselectorlib.router
 object RouterPath {
 
     const val TEST_SELECT_CITY_ACTIVITY = "/test/activity/selectCityActivity"
+    const val TEST_ACTIVITY = "/test/activity/testActivity"
+
 
 }

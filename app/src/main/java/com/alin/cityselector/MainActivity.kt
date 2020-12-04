@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
                 .withString(Key.PARAM_CITY_NAME, "广州").navigation(this, REQUEST_CODE)
         }
 
+        btnJumpTest.setOnClickListener {
+            ARouter.getInstance().build(RouterPath.TEST_ACTIVITY).withString(Key.PARAM_STRING, "佛山")
+                .navigation()
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

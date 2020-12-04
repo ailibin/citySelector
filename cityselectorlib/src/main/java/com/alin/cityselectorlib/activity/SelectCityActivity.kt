@@ -8,7 +8,10 @@ import android.text.TextWatcher
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aiitec.jpmj.entitylibary.model.CharCitys
 import com.aiitec.jpmj.entitylibary.model.Citys
+import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.alibaba.android.arouter.launcher.ARouter
+import com.alin.cityselector.arouter.constant.ConstantMap
 import com.alin.cityselectorlib.R
 import com.alin.cityselectorlib.base.BaseKtActivity
 import com.alin.cityselectorlib.db.CityDBUtils
@@ -28,7 +31,7 @@ import java.util.*
  * 选择城市列表
  *
  */
-@Route(path = RouterPath.TEST_SELECT_CITY_ACTIVITY, name = "selectCityActivity")
+@Route(path = RouterPath.TEST_SELECT_CITY_ACTIVITY, name = "selectCityActivity",extras = ConstantMap.LOGIN_EXTRA)
 class SelectCityActivity : BaseKtActivity() {
 
     private var datas: ArrayList<Citys> = ArrayList()
@@ -40,7 +43,9 @@ class SelectCityActivity : BaseKtActivity() {
     private var TAG = "ailibin"
     private var pinyinComparator: PinyinComparator? = null
     private var type = 0
-    private var currentCityName: String? = null
+    //使用 AutoWired 注解。
+//    @Autowired(name = Key.PARAM_CITY_NAME)
+    public var currentCityName: String? = null
     private var currentCharCity: CharCitys? = null
 
 
@@ -120,6 +125,8 @@ class SelectCityActivity : BaseKtActivity() {
 
     override fun initData() {
         super.initData()
+        //获取传过来的数据,自动注入,不需要getIntent的方式获取
+//        ARouter.getInstance().inject(this)
         currentCityName = intent.getStringExtra(Key.PARAM_CITY_NAME)
         initDB()
     }

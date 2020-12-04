@@ -4,6 +4,7 @@
     <application android:allowBackup="true">
 
         <activity android:name=".activity.SelectCityActivity" />
+        <activity android:name=".activity.TestActivity"/>
 
     </application>
 

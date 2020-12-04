@@ -16,5 +16,7 @@ object Key {
 
     const val PARAM_CITY_NAME = "param_city_name"
 
+    const val PARAM_STRING = "param_string"
+
 
 }
