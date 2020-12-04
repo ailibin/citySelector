@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion "30.0.2"
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -45,8 +45,7 @@ dependencies {
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
     api 'com.github.promeg:tinypinyin:2.0.3'
 
-    //alibaba页面跳转路由
-    api 'com.alibaba:arouter-api:1.4.1'
-    kapt 'com.alibaba:arouter-compiler:1.2.2'
+    api rootProject.ext.dependencies["router"]
+    kapt rootProject.ext.dependencies["router-compiler"]
 
 }

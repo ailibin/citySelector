@@ -136,6 +136,7 @@ class SelectCityActivity : BaseKtActivity() {
         //当前定位的城市名称
         tvCurrentLocation.text = currentCityName
         setListener()
+
     }
 
     private fun setListener() {
