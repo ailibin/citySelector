@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="city_selector_white">#ffffff</color>
+
+    <color name="city_selector_black">#000000</color>
+    <color name="city_selector_black3">#333333</color>
+    <color name="city_selector_black6">#666666</color>
+    <color name="city_selector_gray9">#999999</color>
+    <color name="city_selector_search_bg">#F6F6F6</color>
+    <color name="city_selector_bg_all">#f0f0f0</color>
+
+
+
+</resources>

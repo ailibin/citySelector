@@ -1,0 +1,3 @@
+include ':cityselectorlib'
+include ':app'
+rootProject.name = "Cityselector"
