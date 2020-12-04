@@ -1,3 +1,4 @@
+include ':commonlib'
 include ':cityselectorlib'
 include ':app'
 rootProject.name = "Cityselector"

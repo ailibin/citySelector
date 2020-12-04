@@ -31,8 +31,17 @@ import java.util.*
  * 选择城市列表
  *
  */
-@Route(path = RouterPath.TEST_SELECT_CITY_ACTIVITY, name = "selectCityActivity",extras = ConstantMap.LOGIN_EXTRA)
+@Route(
+    path = RouterPath.TEST_SELECT_CITY_ACTIVITY,
+    name = "selectCityActivity",
+    extras = ConstantMap.LOGIN_EXTRA
+)
 class SelectCityActivity : BaseKtActivity() {
+
+    //使用 AutoWired 注解,JvmField不能缺少,不然会报private权限错误。
+    @JvmField
+    @Autowired(name = Key.PARAM_CITY_NAME)
+    var currentCityName: String? = null
 
     private var datas: ArrayList<Citys> = ArrayList()
     private var adapter: CitysAdapter? = null
@@ -43,9 +52,6 @@ class SelectCityActivity : BaseKtActivity() {
     private var TAG = "ailibin"
     private var pinyinComparator: PinyinComparator? = null
     private var type = 0
-    //使用 AutoWired 注解。
-//    @Autowired(name = Key.PARAM_CITY_NAME)
-    public var currentCityName: String? = null
     private var currentCharCity: CharCitys? = null
 
 
@@ -126,8 +132,7 @@ class SelectCityActivity : BaseKtActivity() {
     override fun initData() {
         super.initData()
         //获取传过来的数据,自动注入,不需要getIntent的方式获取
-//        ARouter.getInstance().inject(this)
-        currentCityName = intent.getStringExtra(Key.PARAM_CITY_NAME)
+        ARouter.getInstance().inject(this)
         initDB()
     }
 
