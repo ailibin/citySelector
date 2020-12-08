@@ -22,11 +22,35 @@
         style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/city_selector_nor_mar"
+        android:layout_marginTop="@dimen/main_nor_mar"
         android:text="点击跳转测试页面"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnJumpCityList"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPopTest"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_nor_mar"
+        android:text="点击pop测试页面"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJumpTest"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSeekBar"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_nor_mar"
+        android:text="点击测试seekBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPopTest"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

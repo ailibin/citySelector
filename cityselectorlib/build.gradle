@@ -34,6 +34,7 @@ android {
 }
 
 dependencies {
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     implementation rootProject.ext.androidx["kotlin-stdlib"]
@@ -50,5 +51,7 @@ dependencies {
 
     api rootProject.ext.dependencies["router"]
     kapt rootProject.ext.dependencies["router-compiler"]
+    implementation project(path: ':commonlib')
+    implementation project(path: ':RangeSeekBar')
 
 }

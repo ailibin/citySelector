@@ -48,7 +48,7 @@ ext {
     ]
 
     dependencies = [
-            //    ********************    网络加载库     ************************  //
+            //    ********************    图片加载     ************************  //
             "glide"                        : 'com.github.bumptech.glide:glide:4.8.0',
             "glide-compiler"               : 'com.github.bumptech.glide:compiler:4.8.0',
 
@@ -57,6 +57,7 @@ ext {
 
             "BaseRecyclerViewAdapterHelper": "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4",
             "tinypinyin"                   : "com.github.promeg:tinypinyin:2.0.3",
+            "xpopup"                       : "com.lxj:xpopup:2.2.5",
     ]
 
 

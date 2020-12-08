@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <!--    <com.jaygoo.widget.RangeSeekBar-->
+    <!--        android:id="@+id/sb_range_3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:rsb_mode="range"-->
+    <!--        app:rsb_tick_mark_layout_gravity="bottom"-->
+    <!--        app:rsb_tick_mark_text_margin="15dp"-->
+    <!--        app:rsb_progress_color="@color/colorProgress"-->
+    <!--        app:rsb_min_interval="50"-->
+    <!--        app:rsb_thumb_drawable="@drawable/thumb_yellow_stroke"-->
+    <!--        app:rsb_indicator_show_mode="alwaysShow"-->
+    <!--        app:rsb_indicator_height="30dp"-->
+    <!--        app:rsb_indicator_width="50dp"-->
+    <!--        app:rsb_indicator_margin="5dp"-->
+    <!--        app:rsb_indicator_background_color="@color/colorProgress"-->
+    <!--        app:rsb_tick_mark_mode="number"-->
+    <!--        app:rsb_tick_mark_text_array="@array/markArray"-->
+    <!--        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="期望薪资"
+            android:textColor="@color/city_selector_black"
+            android:textSize="17sp" />
+
+        <com.jaygoo.widget.RangeSeekBar
+            android:id="@+id/sbSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rsb_gravity="bottom"
+            app:rsb_indicator_height="30dp"
+            app:rsb_indicator_margin="5dp"
+            app:rsb_indicator_show_mode="alwaysShow"
+            app:rsb_indicator_width="50dp"
+            app:rsb_mode="range"
+            app:rsb_progress_color="@color/colorAccent"
+            app:rsb_step_auto_bonding="true"
+            app:rsb_step_color="@color/colorAccent"
+            app:rsb_step_height="0.1dp"
+            app:rsb_step_width="5dp"
+            app:rsb_thumb_drawable="@drawable/thumb_green_alpha"
+            app:rsb_tick_mark_gravity="center"
+            app:rsb_tick_mark_layout_gravity="top"
+            app:rsb_tick_mark_mode="other"
+            app:rsb_tick_mark_text_array="@array/markArray"
+            app:rsb_tick_mark_text_margin="20dp"
+            app:rsb_tick_mark_text_size="0sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="年龄"
+            android:textColor="@color/city_selector_black"
+            android:textSize="17sp" />
+
+        <com.jaygoo.widget.RangeSeekBar
+            android:id="@+id/sbAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rsb_gravity="bottom"
+            app:rsb_indicator_height="30dp"
+            app:rsb_indicator_margin="5dp"
+            app:rsb_indicator_show_mode="alwaysShow"
+            app:rsb_indicator_width="50dp"
+            app:rsb_mode="range"
+            app:rsb_progress_color="@color/colorAccent"
+            app:rsb_step_auto_bonding="true"
+            app:rsb_step_color="@color/colorAccent"
+            app:rsb_step_height="0.1dp"
+            app:rsb_step_width="5dp"
+            app:rsb_indicator_radius="0dp"
+            app:rsb_thumb_drawable="@drawable/thumb_green_alpha"
+            app:rsb_tick_mark_gravity="center"
+            app:rsb_tick_mark_layout_gravity="top"
+            app:rsb_tick_mark_mode="other"
+            app:rsb_tick_mark_text_array="@array/markArray"
+            app:rsb_tick_mark_text_margin="20dp"
+            app:rsb_tick_mark_text_size="0sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="工作年限"
+            android:textColor="@color/city_selector_black"
+            android:textSize="17sp" />
+
+        <com.jaygoo.widget.RangeSeekBar
+            android:id="@+id/sbWorkYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rsb_gravity="bottom"
+            app:rsb_indicator_height="30dp"
+            app:rsb_indicator_margin="5dp"
+            app:rsb_indicator_show_mode="alwaysShow"
+            app:rsb_indicator_width="50dp"
+            app:rsb_mode="range"
+            app:rsb_progress_color="@color/colorAccent"
+            app:rsb_step_auto_bonding="true"
+            app:rsb_step_color="@color/colorAccent"
+            app:rsb_step_height="0.1dp"
+            app:rsb_step_width="5dp"
+            app:rsb_indicator_radius="0dp"
+            app:rsb_thumb_drawable="@drawable/thumb_green_alpha"
+            app:rsb_tick_mark_gravity="center"
+            app:rsb_tick_mark_layout_gravity="top"
+            app:rsb_tick_mark_mode="other"
+            app:rsb_tick_mark_text_array="@array/markArray"
+            app:rsb_tick_mark_text_margin="20dp"
+            app:rsb_tick_mark_text_size="0sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -32,6 +32,14 @@ class MainActivity : AppCompatActivity() {
                 .navigation()
         }
 
+        btnPopTest.setOnClickListener {
+            ARouter.getInstance().build( RouterPath.TEST_POP_ACTIVITY).navigation()
+        }
+
+        btnSeekBar.setOnClickListener {
+            ARouter.getInstance().build( RouterPath.TEST_SEEK_BAR_ACTIVITY).navigation()
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

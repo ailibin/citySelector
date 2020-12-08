@@ -1,3 +1,6 @@
+include ':RangeSeekBar'
+include ':corelib'
+include ':library'
 include ':commonlib'
 include ':cityselectorlib'
 include ':app'

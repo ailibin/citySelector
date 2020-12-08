@@ -2,6 +2,7 @@ package com.alin.cityselector
 
 import androidx.multidex.MultiDexApplication
 import com.alibaba.android.arouter.launcher.ARouter
+import com.alin.commonlib.util.AppLauncherUtils
 
 /**
  *
@@ -23,6 +24,7 @@ class App : MultiDexApplication() {
             ARouter.openLog()
         }
         ARouter.init(this)
+        AppLauncherUtils.init(this)
 
     }
 

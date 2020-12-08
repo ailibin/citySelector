@@ -1,4 +1,4 @@
-package com.alin.cityselector.arouter;
+package com.alin.commonlib.arouter;
 
 import android.content.Context;
 

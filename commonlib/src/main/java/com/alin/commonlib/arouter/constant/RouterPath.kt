@@ -14,6 +14,9 @@ object RouterPath {
 
     const val TEST_SELECT_CITY_ACTIVITY = "/test/activity/selectCityActivity"
     const val TEST_ACTIVITY = "/test/activity/testActivity"
+    const val TEST_POP_ACTIVITY = "/test/activity/testPopActivity"
+    const val TEST_POP_ACTIVITY2 = "/test/activity/testPopActivity2"
+    const val TEST_SEEK_BAR_ACTIVITY = "/test/activity/seekBarActivity"
 
 
 }

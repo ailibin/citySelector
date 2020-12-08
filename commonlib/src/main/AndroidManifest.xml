@@ -1,4 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alin.commonlib">
 
+    <application android:allowBackup="true">
+
+        <activity android:name=".pop.PopTestActivity" />
+
+    </application>
+
 </manifest>

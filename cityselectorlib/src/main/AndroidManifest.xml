@@ -5,6 +5,8 @@
 
         <activity android:name=".activity.SelectCityActivity" />
         <activity android:name=".activity.TestActivity"/>
+        <activity android:name=".activity.PopTestActivity"/>
+        <activity android:name=".activity.SeekBarActivity"/>
 
     </application>
 

@@ -48,12 +48,15 @@ dependencies {
     androidTestImplementation rootProject.ext.androidx["ext-junit"]
     androidTestImplementation rootProject.ext.androidx["espresso-core"]
 
-    //alibaba页面跳转路由
-    api rootProject.ext.dependencies["router"]
-    kapt rootProject.ext.dependencies["router-compiler"]
+//    //alibaba页面跳转路由
+//    api rootProject.ext.dependencies["router"]
+//    kapt rootProject.ext.dependencies["router-compiler"]
+//    api rootProject.ext.dependencies["xpopup"]
 
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation project(path: ':cityselectorlib')
+    implementation project(path: ':commonlib')
+
 
 
 }
